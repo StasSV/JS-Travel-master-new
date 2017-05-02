@@ -59,7 +59,7 @@ $('#events').click(function(){
 });
 
 $('#login').click(function(){
-
+    document.location.href = "login.html";
 });
 
 $('#join').click(function(){
