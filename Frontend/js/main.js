@@ -15,70 +15,70 @@ function isScrolledIntoView($elem, $window) {
 
 $(document).on("scroll", function () {
     // if (isScrolledIntoView($elem, $window))
-        $elem.addClass("animate-description")
+    $elem.addClass("animate-description")
 });
 
-$(function(){
-    $(window).scroll(function(e) {
-        if($(this).scrollTop()>20){
+$(function () {
+    $(window).scroll(function (e) {
+        if ($(this).scrollTop() > 20) {
             $('.top-panel').addClass('scrolled-top');
         }
-        else if($(this).scrollTop()==0){
+        else if ($(this).scrollTop() == 0) {
             $('.top-panel').removeClass('scrolled-top');
         }
     });
 });
 
 
-$('#go').click(function(){
+$('#go').click(function () {
     document.location.href = "way.html";
 });
 
-$('#where-to-go').click(function(){
+$('#where-to-go').click(function () {
     //  document.location.href = "whereToGo.html";
 });
 
-$('#home').click(function(){
+$('#home').click(function () {
     document.location.href = "index.html";
 });
 
-$('#way').click(function(){
+$('#way').click(function () {
     document.location.href = "way.html";
 });
 
-$('#about').click(function(){
+$('#about').click(function () {
     document.location.href = "about.html";
 });
 
-$('#hotels').click(function(){
-  //  document.location.href = "hotels.html";
+$('#hotels').click(function () {
+    //  document.location.href = "hotels.html";
 });
 
-$('#events').click(function(){
+$('#events').click(function () {
 // document.location.href = "events.html";
 });
 
-$('#login').click(function(){
-   // document.location.href = "login.html";
+$('#login').click(function () {
+    // document.location.href = "login.html";
 });
 
-$('#join').click(function(){
+$('#join').click(function () {
 
 });
 
-$(function() {
+$(function () {
     var inp = $("#there-input");
-    var d = new Date() , s;
-    if(d.getMonth() < 9)  s = '0' + (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
+    var d = new Date(), s;
+    if (d.getMonth() < 9) s = '0' + (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
     else s = (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
     inp.datepicker();
     inp.attr("placeholder", s);
 });
 
-$(function() {
+$(function () {
     var inp = $("#back-input");
-    var d = new Date() , s;
-    if(d.getMonth() < 9) s = '0' + (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
+    var d = new Date(), s;
+    if (d.getMonth() < 9) s = '0' + (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
     else s = (d.getMonth() + 1 ) + '/' + (d.getDate() + 1) + '/' + d.getFullYear();
     inp.datepicker();
     inp.attr("placeholder", s);
