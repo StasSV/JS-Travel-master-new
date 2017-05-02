@@ -35,7 +35,7 @@ $('#go').click(function(){
 });
 
 $('#where-to-go').click(function(){
-
+    //  document.location.href = "whereToGo.html";
 });
 
 $('#home').click(function(){
@@ -51,15 +51,15 @@ $('#about').click(function(){
 });
 
 $('#hotels').click(function(){
-
+  //  document.location.href = "hotels.html";
 });
 
 $('#events').click(function(){
-
+// document.location.href = "events.html";
 });
 
 $('#login').click(function(){
-    document.location.href = "login.html";
+   // document.location.href = "login.html";
 });
 
 $('#join').click(function(){
