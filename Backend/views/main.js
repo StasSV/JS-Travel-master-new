@@ -28,7 +28,10 @@ function startServer(port) {
     var app = express();
 
     //Налаштування директорії з шаблонами
-    app.set('views', path.join(__dirname, 'views'));
+   // app.set('views', path.join(__dirname, 'views'));
+    app.set('views', __dirname);
+    console.log("dirname:"+__dirname);
+    console.log("path:"+path.toString());
     app.set('view engine', 'ejs');
 
     //Налаштування виводу в консоль списку запитів до сервера

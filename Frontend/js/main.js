@@ -59,11 +59,14 @@ $('#events').click(function () {
 });
 
 $('#login').click(function () {
-    // document.location.href = "login.html";
+     document.location.href = "login.html";
 });
 
 $('#join').click(function () {
-
+    document.location.href = "login.html";
+});
+$('#write').click(function () {
+    document.location.href = "write.html";
 });
 
 $(function () {
@@ -95,5 +98,7 @@ $("#one-way").change(function () {
     $("#return").prop('checked', false);
     $(".box-line").addClass("one-way-mode");
 });
+
+
 
 
