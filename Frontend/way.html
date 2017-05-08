@@ -111,40 +111,26 @@
 
 
                     <script>
-                        document.getElementById("find").addEventListener("click", function() {
+                        document.getElementById("find").addEventListener("click", function () {
                             alert('works');
-//                            if(document.getElementById("there-input").val!=null&&
-////                                document.getElementById("back-input").val!=null){
+                            var url = "https://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey
+//                            function getRequest(url, callback) {
+//                                $.ajax({
+//                                    url: url,
+//                                    type: 'GET',
+//                                    success: function(data){
+//                                        callback(null, data);
+//                                    },
+//                                    fail: function() {
+//                                        callback(new Error("Ajax Failed"));
+//                                    }
+//                                })
+//                            }
                             var apikey = "na246641168346738444725713769363";
-                            var url = "http://partners.api.skyscanner.net/apiservices/pricing/v1.0   apikey=" + apikey;
-                            $.ajax({
-                                type:"POST",
-                                url:url,
-                                dataType:"json",
-                                crossDomain: true,
-                                Accept:"application/json",
-                                data:{
-                                    country:"UK",
-                                    currency:"GBP",
-                                    locale:"en-GB",
-                                    locationSchema:"iata",
-                                    apikey:"na246641168346738444725713769363",
-                                    grouppricing:"on",
-                                    originplace:"EDI",
-                                    destinationplace:"LHR",
-                                    outbounddate:"2016-05-29",
-                                    inbounddate:"2016-06-05",
-                                    adults:1,
-                                    children:0,
-                                    infants:0,
-                                    cabinclass:"Economy"
-                                },
-                                contentType:"application/x-www-form-urlencoded",
-                                success:function(){
-                                    alert("success");
-                                }
+                            $.get("https://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey, function(data){
+                                alert("response" + data);
                             });
-
+                 //           var url = "http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey;
 
 
                         });
