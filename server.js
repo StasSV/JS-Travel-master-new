@@ -1,2 +1,2 @@
-var main = require('./Backend/views/main');
+var main = require('./Backend/main');
 main.startServer(5050);

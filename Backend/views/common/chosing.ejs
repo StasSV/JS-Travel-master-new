@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Way</title>
-
-    <!-- Bootsrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
-    <!-- LESS JavaScript компілятор -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-    <script src="http://partners.api.skyscanner.net/apiservices/pricing/v1.0" type="text/javascript"></script>
-
-    <!-- Calendar -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-</head>
 <body>
 
 <div class="top-panel">
@@ -130,7 +112,7 @@
                             $.get("http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey, function(data,status){
                                 alert("response" + data+" status "+status);
                             });
-                 //           var url = "http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey;
+                            //           var url = "http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=" + apikey;
 
 
                         });
@@ -145,39 +127,3 @@
     </div>
 
 </div>
-
-
-<footer class="footer">
-
-    <div class="footer-info">
-        <!--logo-text-->
-        <!--добавить можно лого чтоб был цвет и шрифт как на лого наверху -->
-        <h2 class="footer-lg "> Our Domain <br> Goes Here </h2>
-
-        <div class="footer-titles">
-            <p id="about"> About & Contact </p>
-        </div>
-
-        <div class="copyright"> © 2017</div>
-
-    </div>
-
-</footer>
-
-
-<!-- jQuery JavaScript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- Calendar -->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!--Bootsrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!--Own JavaScript -->
-<script type="text/javascript" src="../src/main.js"></script>
-
-</body>
-</html>
-
-
-
-

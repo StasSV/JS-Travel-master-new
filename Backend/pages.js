@@ -6,7 +6,6 @@ exports.startPage = function(req, res) {
 };
 
 exports.wayPage = function(req, res) {
-    //TODO: implement
     res.render('wayPage', {
         pageTitle: 'Way'
     });

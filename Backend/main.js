@@ -8,15 +8,13 @@ var bodyParser = require('body-parser');
 
 function configureEndpoints(app) {
     var pages = require('./pages');
- //   var api = require('./api');
-
 
     //Сторінки
     //Головна сторінка
     app.get('/', pages.startPage);
 
     //Сторінка замовлення
-    app.get('/', pages.wayPage);
+    app.get('/way.html', pages.wayPage);
 
     //Якщо не підійшов жоден url, тоді повертаємо файли з папки www
     app.use(express.static(path.join(__dirname, '../Frontend/www')));
@@ -28,8 +26,8 @@ function startServer(port) {
     var app = express();
 
     //Налаштування директорії з шаблонами
-   // app.set('views', path.join(__dirname, 'views'));
-    app.set('views', __dirname);
+    app.set('views', path.join(__dirname, 'views'));
+ //   app.set('views', __dirname);
     console.log("dirname:"+__dirname);
     console.log("path:"+path.toString());
     app.set('view engine', 'ejs');
